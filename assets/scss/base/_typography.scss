@@ -1,0 +1,72 @@
+$sans-serif: 'Roboto', sans-serif;
+$serif: Merriweather, Georgia, 'Times New Roman', serif;
+//set font weights
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+//set body
+
+html{
+  font-size: 87.5%;
+}
+body {
+  font-family: $sans-serif,sans-serif;
+  font-weight: $normal;
+  -webkit-text-size-adjust: 100%; //fix for iOS
+  line-height: 1.5;
+  color: #30453d;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+
+p{
+
+}
+span{
+
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.light-blue-text{
+  color: $light-blue !important;
+}
+
+.dark-text{
+  color: #30453d;
+  font-weight: 500;
+}
+
+.text-underline{
+  text-decoration: underline;
+}
+

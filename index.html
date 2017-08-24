@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css" media="screen,projection"/>
+
+
+</head>
+
+<body>
+<div class="wrapper-page">
+    <div class="header">
+        <div class="wrapper-header">
+            <div class="logo left">
+                <img src="./img/terva-logo-full-white.png" alt="">
+            </div>
+            <div class="search-box left">
+                <input type="text" placeholder="Enter a city or address">
+                <button type="submit"><i class="material-icons">search</i></button>
+            </div>
+            <div class="main-menu right">
+                <a class='dropdown-button' href='#' data-activates='dropdown1'><i class="material-icons">more_vert</i></a>
+
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                </ul>
+            </div>
+
+            <a class="button-bg btn right text-uppercase">Upgrade</a>
+
+        </div>
+    </div>
+    <div class="wrapper-map">
+        <div id="main-map"></div>
+        <div class="information-detail-box">
+            <div id="mini-map"></div>
+            <div class="status text-center">
+                For sale by: <a href="#" class="light-blue-text text-underline">Gannon Real Estate</a>
+            </div>
+            <div class="wrapper-table">
+                <div class="cl-1">
+                    <div class="wrapper green-bg">
+                        For sale: <span class="dark-text">$9.071/ac</span>
+                    </div>
+                </div>
+                <div class="cl-1">
+                    <div class="wrapper">
+                        <span class="light-blue-text">Sale Date</span> <span class="dark-text">2/27/2017</span>
+                    </div>
+                </div>
+                <div class="cl-2">
+                    <div class="wrapper text-center">
+                        <div class="light-blue-text">Total Acres</div>
+                        <div class="lg-text">99.1</div>
+                    </div>
+                </div>
+                <div class="cl-2">
+                    <div class="wrapper text-center">
+                        <div class="light-blue-text">CSR2</div>
+                        <div class="lg-text">99.1</div>
+                    </div>
+                </div>
+                <div class="cl-2">
+                    <div class="wrapper text-center">
+                        <div class="light-blue-text">Tillable Acres</div>
+                        <div class="lg-text">None</div>
+                    </div>
+                </div>
+                <div class="cl-2">
+                    <div class="wrapper text-center">
+                        <div class="light-blue-text">Co.CSR2</div>
+                        <div class="lg-text">99.1</div>
+                    </div>
+                </div>
+                <div class="cl-1">
+                    <div class="wrapper">
+                        <div class="item">
+                            <div class="light-blue-text">County: </div>
+                            <div >Greene Co,IA</div>
+                        </div>
+                        <div class="item">
+                            <div class="light-blue-text">Legal Description: </div>
+                            <div >13 - 534 - 12W</div>
+                        </div>
+                        <div class="item">
+                            <div class="light-blue-text">Sale Condition: </div>
+                            <div >No Specified</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sign-up-box">
+        <div class="wrapper-box">
+            <div class="form-default">
+                <ul class="tabs">
+                    <li class="tab"><a class="active" href="#tab1">Log in</a></li>
+                    <li class="tab"><a href="#tab2">Sign up</a></li>
+                </ul>
+                <div id="tab1" class="tab-content login-form">
+                    <form action="" class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="johndoe@gmail.com" type="email" id="email" class="validate">
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="******" type="email" id="password" class="validate">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text-underline light-blue-text col s12">Forgot your password?</div>
+                        </div>
+                        <div class="wrapper-buttons text-center">
+                            <a class="waves-effect waves-light btn text-uppercase">Next</a>
+                        </div>
+                    </form>
+                </div>
+                <div id="tab2" class="tab-content sign-up-form">
+                    <form action="" class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="John" id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" placeholder="Doe" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="johndoe@gmail.com" type="email" id="email2" class="validate">
+                                <label for="email2">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="******" type="email" id="password2" class="validate">
+                                <label for="password2">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 checkbox">
+                                <input type="checkbox" id="test5" />
+                                <label for="test5">By signing up, you agree to our <a href="#" class="light-blue-text text-underline">Privacy Policy</a> and
+                                    <a href="#" class="text-underline light-blue-text">Terms of Service</a>. </label>
+                            </div>
+                        </div>
+                        <div class="wrapper-buttons text-center">
+                            <a class="waves-effect waves-light btn text-uppercase">Next</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="social-sign-up ">
+                <div class="wrapper">
+                    <div class="logo">
+                        <img src="./img/terva-logo-icon.png" alt="">
+                    </div>
+                    <div class="notification-text">
+                        Terva aims to make the world's farmland information accessible.
+                    </div>
+                    <div class="wrapper-buttons text-center">
+                        <a class="btn-default btn "><i class="fa fa-facebook-official left"></i> <span class="left">Sign in with Facebook</span></a>
+                        <a class="btn-default btn "><i class="tv-icon tv-icon-google left"></i> <span class="left">Sign in with Google</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+</body>
+</html>
+        
