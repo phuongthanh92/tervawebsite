@@ -1,0 +1,40 @@
+.wrapper-content{
+  clear: both;
+  padding-top: 10px;
+  .content{
+    color: rgba(0, 0, 0, 0.87);
+    overflow: hidden;
+    padding: 0 30px;
+    .title-page{
+      font-family: Allerta, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.33;
+      margin-bottom: 10px;
+    }
+    .description-text{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.list-features{
+  .card{
+    .card-content{
+      padding: 18px;
+      min-height: 102px;
+      overflow: hidden;
+      .card-title{
+        font-family: Allerta, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.71;
+        color: rgba(0, 0, 0, 0.87);
+      }
+      .card-description{
+        color: rgba(0, 0, 0, 0.54);
+        font-weight: 500;
+      }
+    }
+  }
+}

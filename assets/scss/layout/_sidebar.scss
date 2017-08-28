@@ -1,0 +1,32 @@
+.sidebar {
+  width: 300px;
+  float: left;
+  margin-bottom: 20px;
+  .collection {
+    margin: 0;
+    border:none;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: $light-grey;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+    .collection-item {
+      line-height: 30px;
+      color: rgba(29, 48, 43, 0.54);
+      font-weight: 500;
+      i.left {
+        width: 24px;
+        text-align: center;
+        margin-right: 30px;
+        &.fa {
+          font-size: 1.3em;
+        }
+      }
+      &.active{
+        background: $pumpkin-orange;
+        color: #ffffff;
+      }
+    }
+  }
+}
