@@ -41,81 +41,140 @@
 
 .light-box {
   background: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 38px;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.14);
-  .box__title{
+  .box__title {
     font-size: 24px;
     line-height: 1;
     padding: 20px 60px;
     color: rgba(0, 0, 0, 0.87);
+    border-bottom: solid 2px #eeeeee;
   }
-  .box__content{
+  .box__content {
     padding: 25px 0;
   }
 }
 
-
-.packages{
-  .item-package{
+.packages {
+  .item-package {
     float: left;
     width: 33.333333333%;
     @include border-radius(5px);
-    padding: 25px 50px;
+    padding: 27px 45px 25px 45px;
     text-align: center;
     font-weight: bold;
-    .item-title{
+    cursor: pointer;
+    @include transition(all, 0.4s);
+    .item-title {
       font-size: 24px;
       line-height: 28px;
       height: 28px;
       color: $pumpkin-orange;
       margin-bottom: 20px;
     }
-    .item-price{
+    .item-price {
       display: inline-block;
       position: relative;
       margin-bottom: 20px;
-      .item-currency{
+      .item-currency {
         position: absolute;
-        top:0;
+        top: 0;
         right: 100%;
         font-size: 20px;
         font-weight: bold;
         color: #a2a2a2;
       }
-      .item-time{
+      .item-time {
         font-size: 20px;
         font-weight: bold;
         color: #a2a2a2;
         position: absolute;
-        bottom:0;
+        bottom: 0;
         left: 100%;
       }
-      .item-number{
+      .item-number {
         line-height: 1;
         font-size: 64px;
         font-weight: bold;
         color: #444444;
       }
     }
-    .item-content{
+    .item-content {
       font-size: 20px;
       font-weight: 500;
       color: #444444;
       line-height: 24px;
-      height: 168px;
-      li{
-        padding: 9px 0;
-        height: 42px;
-        &:after{
-          height: 2px;
+      margin-bottom: 20px;
+      li {
+        padding: 10px 0;
+        height: 47px;
+        white-space: nowrap;
+        position: relative;
+        line-height: 27px;
+        &:after {
+          position: absolute;
+          top: 100%;
+          height: 1px;
           background: #e1e1e1;
           width: 80%;
           margin: 0 auto;
           content: "";
+          left: 10%;
+        }
+        &:last-child{
+          &:after{
+            display: none;
+          }
         }
       }
 
+    }
+    &.active {
+      color: #ffffff;
+      background-color: $pumpkin-orange;
+      box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.3), 0 2px 5px 1px rgba(0, 0, 0, 0.3), 0 0 2px 0 rgba(0, 0, 0, 0.3);
+      border: solid 1px $pumpkin-orange;
+      .item-title {
+        color: #ffffff;
+      }
+      .item-price {
+        .item-currency, .item-time, .item-number {
+          color: #ffffff;
+        }
+      }
+      .item-content{
+        color: #ffffff;
+        li{
+          &:after{
+            border-color: #e1e1e1;
+          }
+        }
+      }
+      .amber.darken-4{
+        background-color: #ffffff !important;
+        color: $dark;
+      }
+    }
+  }
+}
+
+.account-box{
+  .box__content{
+    padding: 30px 40px;
+  }
+}
+.account-form{
+  .input-group.col6{
+    float: left;
+    width: calc((100% - 120px)/2);
+    margin-right: 60px;
+    max-width: 370px;
+    margin-bottom: 10px;
+    >input{
+      margin-bottom: 10px;
     }
   }
 }

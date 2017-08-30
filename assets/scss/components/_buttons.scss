@@ -26,6 +26,10 @@
       color: #3b5998;
     }
   }
+  &.grey{
+    color: $dark;
+  }
+
 }
 
 .btn-default {
@@ -33,5 +37,20 @@
   color: rgba(0, 0, 0, 0.54);
   &:hover {
     color: #ffffff;
+  }
+}
+
+.btn-light{
+  background: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: $dark;
+}
+
+.wrapper-buttons{
+  clear: both;
+  .btn:not(:first-child){
+    margin-left: 17px;
   }
 }

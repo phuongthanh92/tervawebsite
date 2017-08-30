@@ -24,10 +24,13 @@
                 <img src="./img/terva-logo-full-white.png" alt="">
             </div>
             <div class=" left">
-                <a class="btn-default btn text-uppercase btn-back"><i class="material-icons left">keyboard_backspace</i> Back to map </a>
+                <a class="btn-default btn text-uppercase btn-back"><i class="material-icons left">keyboard_backspace</i>
+                    Back to map </a>
             </div>
             <div class="main-menu right">
-                <a class='dropdown-button' href='#' data-activates='dropdown1'><i class="material-icons">more_vert</i></a>
+                <a class='dropdown-button' href='#' data-activates='dropdown1'>
+                    <i class="material-icons">apps</i>
+                </a>
 
                 <!-- Dropdown Structure -->
                 <ul id='dropdown1' class='dropdown-content'>
@@ -41,6 +44,7 @@
             </div>
 
             <a class="button-bg btn right text-uppercase">Upgrade</a>
+            <a href="#" class="right btn btn-light">My Account</a>
 
         </div>
     </div>
@@ -54,12 +58,12 @@
                             <div class="row">
                                 <div class="col s12">
                                     <ul class="tabs orange-tabs">
-                                        <li class="tab col s3"><a class="active" href="#monthly">Monthly</a></li>
-                                        <li class="tab col s3"><a href="#yearly">Yearly</a></li>
+                                        <li class="tab"><a class="active" href="#monthly">Monthly</a></li>
+                                        <li class="tab"><a href="#yearly">Yearly</a></li>
                                     </ul>
                                 </div>
                                 <div id="monthly" class="col s12">
-                                    <div class="row packages">
+                                    <div class="packages">
                                         <div class="item-package">
                                             <div class="item-title">Terva Free</div>
                                             <div class="item-price">
@@ -79,7 +83,7 @@
                                                 <button class="btn amber darken-4">Current</button>
                                             </div>
                                         </div>
-                                        <div class="item-package">
+                                        <div class="item-package active">
                                             <div class="item-title">Terva Standard</div>
                                             <div class="item-price">
                                                 <span class="item-currency">$</span>
@@ -119,10 +123,53 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="yearly" class="col s12">Test 2</div>
+                                <div id="yearly" class="col s12">
+
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="light-box content-box account-box">
+                        <div class="box__title">My Account</div>
+                        <div class="box__content">
+                            <form action="" class="form-default account-form">
+                                <div class="input-group col6">
+                                    <div class="input-field">
+                                        <input placeholder="John" id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="input-group col6">
+                                    <div class="input-field">
+                                        <input id="last_name" type="text" placeholder="Doe" class="validate">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="input-group col6">
+                                    <div class="input-field">
+                                        <input placeholder="johndoe@gmail.com" type="email" id="email2" class="validate">
+                                        <label for="email2">Email Address</label>
+                                    </div>
+                                </div>
+                                <div class="input-group col6">
+                                    <div class="input-field ">
+                                        <input placeholder="******" type="email" id="password2" class="validate">
+                                        <label for="password2">Password</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="test5" />
+                                    <label for="test5">Notify me when land activity occurs in my Alert Zone.</label>
+                                </div>
+                                <div class="wrapper-buttons pd-top-20">
+                                    <button class="btn amber darken-4" type="submit">Save Changes</button>
+                                    <a href="change%20password.html" class="btn grey lighten-2" type="submit">Changes Password</a>
+                                    <button class="btn btn-light" type="submit">Delete Account</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
