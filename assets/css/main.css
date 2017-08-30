@@ -286,6 +286,29 @@ body {
   .orange-tabs .indicator {
     display: none; }
 
+.teal-tabs {
+  background: none;
+  text-align: center;
+  height: 54px; }
+  .teal-tabs li.tab {
+    min-width: 107px;
+    line-height: 32px;
+    height: 32px; }
+    .teal-tabs li.tab a {
+      color: #a2a2a2;
+      text-transform: uppercase;
+      border-radius: 2px;
+      font-weight: 500;
+      letter-spacing: 0.5px; }
+      .teal-tabs li.tab a.active {
+        color: #ffffff;
+        background-color: #009688;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12); }
+  .teal-tabs .indicator {
+    display: none; }
+
 .wrapper-map {
   position: fixed;
   top: 0;
@@ -436,6 +459,37 @@ body {
         .sign-up-box .social-sign-up > .wrapper .btn .tv-icon {
           height: 34px;
           line-height: 34px; }
+  .sign-up-box .packages-information {
+    overflow: hidden;
+    color: #fafafa;
+    position: relative;
+    height: 567px; }
+    .sign-up-box .packages-information > .wrapper {
+      z-index: 10;
+      width: 275px;
+      text-align: center; }
+      .sign-up-box .packages-information > .wrapper .teal-tabs {
+        margin-bottom: 38px;
+        width: auto; }
+        .sign-up-box .packages-information > .wrapper .teal-tabs .tab {
+          width: 107px;
+          float: none; }
+          .sign-up-box .packages-information > .wrapper .teal-tabs .tab a {
+            padding: 0; }
+    .sign-up-box .packages-information .logo {
+      text-align: center;
+      margin-bottom: 15px; }
+      .sign-up-box .packages-information .logo img {
+        width: 60px; }
+    .sign-up-box .packages-information .item-title {
+      font-size: 20px;
+      font-weight: 500; }
+    .sign-up-box .packages-information .item-price {
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 38px; }
+  .sign-up-box .packages-information .wrapper-buttons {
+    padding-top: 24px; }
 
 .centerer {
   position: absolute;
