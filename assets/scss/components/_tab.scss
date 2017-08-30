@@ -1,0 +1,20 @@
+.orange-tabs {
+  background: none;
+  text-align: center;
+  li {
+    min-width: 107px;
+    a {
+      font-weight: bold;
+      color: #a2a2a2;
+      text-transform: uppercase;
+      border-radius: 2px;
+      &.active {
+        color: #ffffff;
+        background-color: $pumpkin-orange;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+}

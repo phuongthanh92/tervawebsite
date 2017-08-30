@@ -78,11 +78,11 @@
 /*thanhntp*/
 
 @mixin transition($property, $value){
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: $property $value;
+  -moz-transition: $property $value;
+  -ms-transition: $property $value;
+  -o-transition: $property $value;
+  transition: $property $value;
 }
 
 @mixin rotate($deg){

@@ -12,3 +12,17 @@
   margin-right: -0.75rem;
   margin-left: -0.75rem;
 }
+
+.mg-top-20{
+  margin-top: 20px;
+}
+
+.pd-top-20{
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 1200px){
+  .container{
+    width: 1102px;
+  }
+}

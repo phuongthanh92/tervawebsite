@@ -1,40 +1,121 @@
-.wrapper-content{
+.wrapper-content {
   clear: both;
   padding-top: 10px;
-  .content{
+  .content {
     color: rgba(0, 0, 0, 0.87);
     overflow: hidden;
     padding: 0 30px;
-    .title-page{
+    .title-page {
       font-family: Allerta, sans-serif;
       font-size: 24px;
       font-weight: bold;
       line-height: 1.33;
       margin-bottom: 10px;
     }
-    .description-text{
+    .description-text {
       margin-bottom: 40px;
     }
   }
 }
 
-.list-features{
-  .card{
-    .card-content{
+.list-features {
+  .card {
+    .card-content {
       padding: 18px;
       min-height: 102px;
       overflow: hidden;
-      .card-title{
+      .card-title {
         font-family: Allerta, sans-serif;
         font-size: 14px;
         font-weight: bold;
         line-height: 1.71;
         color: rgba(0, 0, 0, 0.87);
       }
-      .card-description{
+      .card-description {
         color: rgba(0, 0, 0, 0.54);
         font-weight: 500;
       }
+    }
+  }
+}
+
+.light-box {
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+  .box__title{
+    font-size: 24px;
+    line-height: 1;
+    padding: 20px 60px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .box__content{
+    padding: 25px 0;
+  }
+}
+
+
+.packages{
+  .item-package{
+    float: left;
+    width: 33.333333333%;
+    @include border-radius(5px);
+    padding: 25px 50px;
+    text-align: center;
+    font-weight: bold;
+    .item-title{
+      font-size: 24px;
+      line-height: 28px;
+      height: 28px;
+      color: $pumpkin-orange;
+      margin-bottom: 20px;
+    }
+    .item-price{
+      display: inline-block;
+      position: relative;
+      margin-bottom: 20px;
+      .item-currency{
+        position: absolute;
+        top:0;
+        right: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        color: #a2a2a2;
+      }
+      .item-time{
+        font-size: 20px;
+        font-weight: bold;
+        color: #a2a2a2;
+        position: absolute;
+        bottom:0;
+        left: 100%;
+      }
+      .item-number{
+        line-height: 1;
+        font-size: 64px;
+        font-weight: bold;
+        color: #444444;
+      }
+    }
+    .item-content{
+      font-size: 20px;
+      font-weight: 500;
+      color: #444444;
+      line-height: 24px;
+      height: 168px;
+      li{
+        padding: 9px 0;
+        height: 42px;
+        &:after{
+          height: 2px;
+          background: #e1e1e1;
+          width: 80%;
+          margin: 0 auto;
+          content: "";
+        }
+      }
+
     }
   }
 }

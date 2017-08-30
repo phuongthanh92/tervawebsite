@@ -72,7 +72,22 @@
     border-radius: 2px;
     background-color: $dark;
     box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+    position: relative;
     @extend %clearfix;
+    .close-btn{
+      position: absolute;
+      top:24px;
+      right: 26px;
+      color: #ffffff;
+      opacity: 0.54;
+      width: 14px;
+      height: 14px;
+      @include transition(all, 0.4s);
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+    }
     .form-default{
       width: 466px;
       height: 567px;
@@ -84,6 +99,19 @@
       border-width: 0.5px;
       border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4) 5%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0));
       border-image-slice: 1;
+      position: relative;
+      .centerer{
+        width: 371px;
+      }
+      .title-form{
+        font-size: 24px;
+        color: #2d3f3a;
+        margin-bottom: 30px;
+      }
+      p{
+        color: #2d3f3a;
+        margin-bottom: 16px;
+      }
       .input-field{
         margin-top: 18px;
       }
@@ -156,4 +184,8 @@
       }
     }
   }
+}
+
+.centerer{
+  @include centerer;
 }
