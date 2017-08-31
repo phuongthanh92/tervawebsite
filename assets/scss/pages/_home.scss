@@ -5,6 +5,28 @@
   height: 100%;
   width: 100%;
   z-index: 1;
+  .gate-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    color: $dark;
+    font-weight: 500;
+    z-index: 10;
+    .lg-text{
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .centerer{
+      width: 100%;
+      padding: 40px;
+    }
+  }
   .information-detail-box {
     position: fixed;
     top: 167px;
@@ -19,6 +41,15 @@
     border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4) 5%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0));
     border-image-slice: 1;
     padding: 20px 16px;
+    &.show-gate-box{
+      .content-detail{
+        -webkit-filter: blur(5px); /* Safari */
+        filter: blur(5px);
+      }
+      .gate-box{
+        display: block;
+      }
+    }
     #mini-map {
       height: 176px;
     }
@@ -26,10 +57,14 @@
       padding: 10px 0;
     }
   }
+
+
 }
 
 .wrapper-table {
   margin: 0 -8px;
+  max-height: calc(100% - 220px);
+  max-height: -moz-calc(100% - 220px);
   div[class^="cl"] {
     float: left;
     padding: 4px 8px;
@@ -66,7 +101,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.65);
   z-index: 100;
-  .wrapper-box{
+  .wrapper-box {
     margin: 140px auto 30px;
     width: 788px;
     border-radius: 2px;
@@ -74,9 +109,9 @@
     box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
     position: relative;
     @extend %clearfix;
-    .close-btn{
+    .close-btn {
       position: absolute;
-      top:24px;
+      top: 24px;
       right: 26px;
       color: #ffffff;
       opacity: 0.54;
@@ -84,11 +119,11 @@
       height: 14px;
       @include transition(all, 0.4s);
       cursor: pointer;
-      &:hover{
+      &:hover {
         opacity: 1;
       }
     }
-    .form-default{
+    .form-default {
       width: 466px;
       height: 567px;
       padding: 69px 46px;
@@ -100,45 +135,45 @@
       border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4) 5%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0));
       border-image-slice: 1;
       position: relative;
-      .centerer{
+      .centerer {
         width: 371px;
       }
-      .title-form{
+      .title-form {
         font-size: 24px;
         color: #2d3f3a;
         margin-bottom: 30px;
       }
-      p{
+      p {
         color: #2d3f3a;
         margin-bottom: 16px;
       }
-      .input-field{
+      .input-field {
         margin-top: 18px;
       }
-      .row{
+      .row {
         margin: 0;
       }
-      .login-form{
+      .login-form {
         padding-top: 32px;
-        .text-underline.light-blue-text{
+        .text-underline.light-blue-text {
           margin-bottom: 100px;
         }
       }
-      .sign-up-form{
-        .checkbox{
+      .sign-up-form {
+        .checkbox {
           margin-bottom: 32px;
         }
       }
     }
   }
-  .tabs{
+  .tabs {
     width: 241px;
     margin: 0 auto 40px;
     background: $dark;
-    .tab{
+    .tab {
       width: 50%;
       float: left;
-      a{
+      a {
         opacity: 0.54;
         font-family: Roboto, sans-serif;
         font-size: 14px;
@@ -149,23 +184,23 @@
       }
 
     }
-    .indicator{
+    .indicator {
       background: $pumpkin-orange;
     }
   }
-  .social-sign-up{
+  .social-sign-up {
     overflow: hidden;
-    >.wrapper{
+    > .wrapper {
       max-width: 275px;
       margin: 111px auto 20px;
-      .logo{
+      .logo {
         text-align: center;
         margin-bottom: 55px;
-        img{
+        img {
           width: 60px;
         }
       }
-      .notification-text{
+      .notification-text {
         font-family: Allerta, sans-serif;
         font-size: 20px;
         font-weight: bold;
@@ -174,61 +209,61 @@
         color: #fafafa;
         margin-bottom: 108px;
       }
-      .btn{
+      .btn {
         margin-bottom: 16px;
         text-transform: none;
-        .tv-icon{
+        .tv-icon {
           height: 34px;
           line-height: 34px;
         }
       }
     }
   }
-  .packages-information{
+  .packages-information {
     overflow: hidden;
     color: #fafafa;
     position: relative;
     height: 567px;
-    >.wrapper{
+    > .wrapper {
       z-index: 10;
       width: 275px;
       text-align: center;
-      .teal-tabs{
+      .teal-tabs {
         margin-bottom: 38px;
         width: auto;
-        .tab{
+        .tab {
           width: 107px;
           float: none;
-          a{
+          a {
             padding: 0;
           }
         }
       }
     }
-    .logo{
+    .logo {
       text-align: center;
       margin-bottom: 15px;
-      img{
+      img {
         width: 60px;
       }
     }
-    .item-title{
+    .item-title {
       font-size: 20px;
       font-weight: 500;
     }
-    .item-price{
+    .item-price {
       font-size: 48px;
       line-height: 1;
       margin-bottom: 38px;
     }
   }
-  .packages-information{
-    .wrapper-buttons{
+  .packages-information {
+    .wrapper-buttons {
       padding-top: 24px;
     }
   }
 }
 
-.centerer{
+.centerer {
   @include centerer;
 }
