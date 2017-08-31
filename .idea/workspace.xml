@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="139a664c-f182-49bc-b2b3-88bcedcab377" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account.html" afterPath="$PROJECT_DIR$/account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css.map" afterPath="$PROJECT_DIR$/assets/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/components/_tab.scss" afterPath="$PROJECT_DIR$/assets/scss/components/_tab.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/pages/_home.scss" afterPath="$PROJECT_DIR$/assets/scss/pages/_home.scss" />
-    </list>
+    <list default="true" id="139a664c-f182-49bc-b2b3-88bcedcab377" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -509,15 +502,15 @@
       <workItem from="1503628971402" duration="603000" />
       <workItem from="1503905455401" duration="6973000" />
       <workItem from="1503994697949" duration="11636000" />
-      <workItem from="1504060494178" duration="12827000" />
+      <workItem from="1504060494178" duration="12955000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53466000" />
+    <option name="totallyTimeSpent" value="53594000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
