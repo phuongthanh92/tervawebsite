@@ -28,19 +28,27 @@
                     Back to map </a>
             </div>
             <div class="main-menu right">
-                <a class='dropdown-button' href='#' data-activates='dropdown1'>
+                <a class='dropdown-button' href='#' data-activates='dropdown-main-menu'>
                     <i class="material-icons">apps</i>
                 </a>
 
                 <!-- Dropdown Structure -->
-                <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">three</a></li>
-                    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-                </ul>
+                <div id='dropdown-main-menu' class='dropdown-content'>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/MyAccount_NavBarIcon_Terva.png" alt="" ><br>
+                                My Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/main-manu-logout-lg.png" alt="" ><br>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <a class="button-bg btn right text-uppercase">Upgrade</a>
@@ -174,7 +182,7 @@
             </div>
         </div>
     </div>
-    <div class="upgrade-box sign-up-box" id="upgrade-standard">
+    <div class="upgrade-box sign-up-box hide" id="upgrade-standard">
         <div class="wrapper-box">
             <div class="close-btn">
                 <i class="material-icons">close</i>
