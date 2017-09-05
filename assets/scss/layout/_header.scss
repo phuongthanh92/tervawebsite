@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   padding: 16px;
+  z-index: 10;
   .wrapper-header {
     height: 64px;
     border-radius: 8px;
@@ -98,5 +99,11 @@
     img {
       width: 44px;
     }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .header .wrapper-header .search-box{
+    width: 316px;
   }
 }
