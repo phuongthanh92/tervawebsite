@@ -69,6 +69,17 @@
       .item {
         margin-bottom: 8px;
       }
+      &.wrapper-item-border{
+        padding: 0;
+        .item{
+          padding: 8px;
+          border-top: 1px solid rgba(151, 151, 151, 0.55);
+          margin: 0;
+          &:first-child{
+            border-top: none;
+          }
+        }
+      }
       &.green-bg {
         border-color: $shamrock-green;
       }
@@ -93,11 +104,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background: rgba(0, 0, 0, 0.65);
   z-index: 100;
+  padding: 140px auto;
   .wrapper-box {
-    margin: 140px auto 30px;
     width: 788px;
     border-radius: 2px;
     background-color: $dark;
@@ -196,13 +207,14 @@
         }
       }
       .notification-text {
-        font-family: Allerta, sans-serif;
+        font-family: Aller, sans-serif;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: lighter;
         line-height: 1.4;
         text-align: center;
         color: #fafafa;
         margin-bottom: 108px;
+        padding: 0 20px;
       }
       .btn {
         margin-bottom: 16px;
@@ -231,6 +243,7 @@
           float: none;
           a {
             padding: 0;
+            opacity: 1;
           }
         }
       }
@@ -255,6 +268,25 @@
   .packages-information {
     .wrapper-buttons {
       padding-top: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .sign-up-box{
+    .wrapper-box{
+      width: 740px;
+      .form-default{
+        width: 418px;
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 580px){
+  .sign-up-box{
+    .wrapper-box{
+      @include centerer;
     }
   }
 }
